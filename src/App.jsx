@@ -3,6 +3,13 @@ import React, { Component } from 'react';
 import './App.css';
 import styled, { createGlobalStyle } from 'styled-components';
 
+import { icon, library } from '@fortawesome/fontawesome-svg-core';
+import { faKiwiBird, faHome } from '@fortawesome/free-solid-svg-icons';
+// import { fab } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+// library.add(fakiwibird);
+
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
   body {
@@ -14,8 +21,21 @@ const TopContainer = styled.div`
   background: linear-gradient(#e7fff9 0%, #c1fff3 100%);
   max-height: 200px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  /* align-items: center; */
 `;
+const HeaderContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 20px;
+`;
+
+const IconContainer = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 const Header = styled.p`
   font-size: 40px;
 `;
@@ -37,7 +57,13 @@ class App extends Component {
       <div className="App">
         <GlobalStyle />
         <TopContainer>
-          <Header>MOCK TWITTER</Header>
+          <HeaderContainer>
+            <IconContainer>
+              {/* <FontAwesomeIcon icon={faHome} size="4x" /> */}
+              <FontAwesomeIcon icon={faKiwiBird} size="4x" />
+            </IconContainer>
+            <Header>MOCK TWITTER</Header>
+          </HeaderContainer>
         </TopContainer>
         <MainContainer>
           <LeftContainer>
