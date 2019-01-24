@@ -44,6 +44,7 @@ const MainContainer = styled.div`
 const LeftContainer = styled.div`
   border-right: 1px solid gray;
   width: 30%;
+  padding: 20px;
 `;
 
 const RightContainer = styled.div``;

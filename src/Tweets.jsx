@@ -8,7 +8,16 @@ const TweetContainer = styled.div`
 `;
 const Tweet = styled.div`
   border: 1px solid gray;
+  margin: 40px;
+  height: 200px;
+  padding: 20px;
+  flex-direction: column;
 `;
+
+const TextContainer = styled.div`
+  height: 150px;
+`;
+const ImageContainer = styled.div``;
 
 export default class Tweets extends Component {
   render() {
@@ -20,7 +29,11 @@ export default class Tweets extends Component {
             <Tweet>
               {' '}
               {/* give each tweet stringified JSON data and individual key */}
-              tweet={JSON.stringify(tweet)} key={i}{' '}
+              <TextContainer>{JSON.stringify(tweet.text)}</TextContainer>
+              <ImageContainer>
+                <img src={tweet.profile_pic} width="40" />
+              </ImageContainer>
+              {/* {JSON.stringify(tweet.liked)} */}
             </Tweet>
           );
         })}
