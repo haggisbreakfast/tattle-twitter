@@ -1,15 +1,15 @@
 [
-  "user1": {
+  {
     "profile_pic": "https://vanillicon.com/788e533873e80d2002fa14e1412b4188_200.png",
     "text": "If I have seen further it is by standing on the shoulders of giants",
     "liked": false
   },
-  "user2": {
+  {
     "profile_pic": "https://vanillicon.com/7b89b0d8280b93e2ba68841436c0bebc_200.png",
     "text": "Je pense , donc je suis",
     "liked": false
   },
-  "user3": {
+  {
     "profile_pic": "https://vanillicon.com/d55cf8e18b47d4baaf60c006a0de39e1_200.png",
     "text": "Es ist nichts schrecklicher als eine tätige Unwissenheit.",
     "liked": false

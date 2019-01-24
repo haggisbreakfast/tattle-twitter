@@ -2,10 +2,15 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import tweets from './tweets.json';
 
+const TweetContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 export default class Tweets extends Component {
   render() {
     return (
-      <div className="Tweets">
+      <TweetContainer>
         {tweets.map((tweet, i) => {
           return (
             <div>
@@ -13,7 +18,7 @@ export default class Tweets extends Component {
             </div>
           );
         })}
-      </div>
+      </TweetContainer>
     );
   }
 }
