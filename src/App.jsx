@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import Tweets from './Tweets';
 // import logo from './logo.svg';
-import './App.css';
 import styled, { createGlobalStyle } from 'styled-components';
 
 import { icon, library } from '@fortawesome/fontawesome-svg-core';
@@ -41,7 +41,7 @@ const Header = styled.p`
 `;
 const MainContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 `;
 
 const LeftContainer = styled.div`
@@ -83,7 +83,9 @@ class App extends Component {
             vulputate tellus mollis tellus gravida, ut rhoncus eros tincidunt.
             Mauris at ex eu odio posuere tempus.
           </LeftContainer>
-          <RightContainer />
+          <RightContainer>
+            <Tweets />
+          </RightContainer>
         </MainContainer>
       </div>
     );
