@@ -6,6 +6,9 @@ const TweetContainer = styled.div`
   display: flex;
   flex-direction: column;
 `;
+const Tweet = styled.div`
+  border: 1px solid gray;
+`;
 
 export default class Tweets extends Component {
   render() {
@@ -13,9 +16,10 @@ export default class Tweets extends Component {
       <TweetContainer>
         {tweets.map((tweet, i) => {
           return (
-            <div>
-              tweet={tweet} key={i}
-            </div>
+            <Tweet>
+              {' '}
+              tweet={JSON.stringify(tweet)} key={i}{' '}
+            </Tweet>
           );
         })}
       </TweetContainer>
