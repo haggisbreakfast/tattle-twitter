@@ -5,10 +5,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 import { icon, library } from '@fortawesome/fontawesome-svg-core';
 import { faKiwiBird, faHome } from '@fortawesome/free-solid-svg-icons';
-// import { fab } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-// library.add(fakiwibird);
 
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
@@ -18,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 const TopContainer = styled.div`
-  background: linear-gradient(#e7fff9 0%, #c1fff3 100%);
+  background: linear-gradient(#e7fff9 0%, #87cefa 100%);
   max-height: 200px;
   display: flex;
   justify-content: flex-start;
