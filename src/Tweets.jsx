@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import tweets from './tweets.json';
+import tweetData from './tweetData.json';
 
 const TweetContainer = styled.div`
   display: flex;
@@ -24,16 +24,15 @@ export default class Tweets extends Component {
     return (
       <TweetContainer>
         {/* map over tweets array to spit out individual tweets */}
-        {tweets.map((tweet, i) => {
+        {tweetData.map((tweet, i) => {
           return (
-            <Tweet>
+            <Tweet key={i}>
               {' '}
               {/* give each tweet stringified JSON data and individual key */}
               <TextContainer>{JSON.stringify(tweet.text)}</TextContainer>
               <ImageContainer>
-                <img src={tweet.profile_pic} width="40" />
+                <img src={tweet.profile_pic} width="40" alt="" />
               </ImageContainer>
-              {/* {JSON.stringify(tweet.liked)} */}
             </Tweet>
           );
         })}

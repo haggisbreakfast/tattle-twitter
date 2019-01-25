@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import Tweets from './Tweets';
-// import logo from './logo.svg';
 import styled, { createGlobalStyle } from 'styled-components';
 
-import { icon, library } from '@fortawesome/fontawesome-svg-core';
-import { faKiwiBird, faHome } from '@fortawesome/free-solid-svg-icons';
+import { faKiwiBird } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const GlobalStyle = createGlobalStyle`
